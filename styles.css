@@ -1,16 +1,16 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Georgia', serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #ffe6e6; /* Рожевий фон */
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><text x="10" y="80" font-size="80" fill="%23ff4d4d">❤</text></svg>'); /* Сердечки як фон */
+    background-color: #fff0f5; /* Ніжно-рожевий фон */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><text x="10" y="80" font-size="80" fill="%23ff69b4">❤</text></svg>'); /* Сердечки як фон */
     background-repeat: repeat;
     color: #333;
 }
 
 header {
-    background: #ff4d4d; /* Яскраво-червоний */
+    background: #ff69b4; /* Яскраво-рожевий */
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -42,7 +42,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffe6e6; /* Світло-рожевий при наведенні */
+    color: #ffd1dc; /* Світло-рожевий при наведенні */
 }
 
 section {
@@ -55,10 +55,13 @@ section {
 
 blockquote {
     font-style: italic;
-    border-left: 5px solid #ff4d4d;
+    border-left: 5px solid #ff69b4;
     padding-left: 1rem;
     margin: 1rem 0;
     color: #555;
+    background: #fff0f5; /* Ніжно-рожевий фон для цитат */
+    padding: 1rem;
+    border-radius: 5px;
 }
 
 footer {
@@ -85,7 +88,7 @@ form input, form textarea {
 }
 
 form button {
-    background: #ff4d4d;
+    background: #ff69b4;
     color: #fff;
     border: none;
     padding: 0.7rem 1.5rem;
@@ -95,3 +98,6 @@ form button {
     transition: background 0.3s ease;
 }
 
+form button:hover {
+    background: #ff1493; /* Темніший рожевий при наведенні */
+}
