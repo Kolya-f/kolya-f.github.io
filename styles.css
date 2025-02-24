@@ -1,171 +1,80 @@
-/* Основні стилі для сторінки */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Сучасний шрифт */
-    background-color: #f9f9f9; /* Дуже світлий фон */
-    color: #333;
-    line-height: 1.8;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
-    padding: 20px;
-    opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-/* Заголовок h1 */
-h1 {
-    font-size: 42px;
-    color: #2c3e50;
-    text-align: center;
-    margin-bottom: 30px;
-    font-weight: 600; /* Напівжирний */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Тонка тінь */
-    animation: slideInFromTop 1s ease-out;
-}
-
-@keyframes slideInFromTop {
-    from {
-        transform: translateY(-50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* Заголовки h2 */
-h2 {
-    font-size: 32px;
-    color: #34495e;
-    text-align: left;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    font-weight: 500; /* Напівжирний */
-    animation: slideInFromLeft 1s ease-out;
-}
-
-@keyframes slideInFromLeft {
-    from {
-        transform: translateX(-50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-/* Абзаци */
-p {
-    font-size: 18px;
-    text-align: justify;
-    margin-bottom: 20px;
-    color: #555; /* Трохи темніший колір тексту */
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-/* Посилання */
-a {
-    color: #3498db;
-    text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-a:hover {
-    color: #2980b9;
-    text-decoration: underline;
-    transform: translateY(-2px); /* Ефект підняття */
-}
-
-/* Блок коду */
-pre {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    overflow-x: auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тонка тінь */
-    animation: fadeIn 2s ease-in-out;
-}
-
-code {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
-    color: #c0392b;
-}
-
-/* Футер */
-footer {
-    text-align: center;
-    margin-top: 50px;
-    padding: 30px;
-    background-color: #ffffff;
-    color: #777;
-    border-radius: 15px;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Тінь зверху */
-    animation: fadeIn 2.5s ease-in-out;
-}
-
-/* Стилі для зображення */
-.small-image-container {
-    text-align: center;
-    margin: 30px 0;
-}
-
-.small-image-container img {
-    width: 60px; /* Трохи більше */
-    height: 60px;
-    border-radius: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тонка тінь */
-}
-
-.small-image-container img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Тінь при наведенні */
-}
-
-/* Анімація для зображення */
-.zoom-in {
-    animation: zoomIn 1s ease-in-out;
-}
-
-@keyframes zoomIn {
-    from {
-        transform: scale(0.9);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-/* Додаткові стилі для списку */
-ul {
-    list-style-type: none;
     padding: 0;
-    animation: fadeIn 1.5s ease-in-out;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-ul li {
-    margin-bottom: 15px;
+header {
+    background: #ff6f61;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
 }
 
-ul li a {
-    font-size: 20px;
-    color: #27ae60; /* Зелений колір */
-    transition: color 0.3s ease, transform 0.3s ease;
+header h1 {
+    margin: 0;
 }
 
-ul li a:hover {
-    color: #2ecc71; /* Світліший зелений */
-    transform: translateX(10px); /* Ефект зсуву */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 5px solid #ff6f61;
+    padding-left: 1rem;
+    margin: 1rem 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background: #ff4a3d;
 }
