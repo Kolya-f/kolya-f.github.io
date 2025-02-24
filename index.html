@@ -3,135 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Програмування на C++</title>
-    <link id="main-style" rel="stylesheet" href="styles.css"> <!-- Основна таблиця стилів -->
-    <link id="additional-style" rel="stylesheet" href="additional-styles.css" disabled> <!-- Додаткова таблиця стилів -->
+    <title>Сайт про любов</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <button id="style-switcher">Перемкнути стилі</button>
-        
-    <h1>Програмування на C++</h1>
-     
-    <h2>Зміст</h2>
-    <ul class="fade-in">
-        <li><a href="#intro">Вступ</a></li>
-        <li><a href="#basics">Основи C++</a></li>
-        <li><a href="#oop">Об'єктно-орієнтоване програмування</a></li>
-        <li><a href="#stl">Стандартна бібліотека шаблонів (STL)</a></li>
-        <li><a href="#resources">Додаткові ресурси</a></li>
-    </ul>
-    
-        <!-- Вбудоване зображення через DATA URI -->
-     <div class="small-image-container">
-        <img src="data:image/png;base64,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">
-    </div>
+    <header>
+        <h1>Любов — це все</h1>
+        <nav>
+            <ul>
+                <li><a href="#main">Головна</a></li>
+                <li><a href="#quotes">Цитати</a></li>
+                <li><a href="#stories">Історії</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h2 id="intro">Вступ</h2>
-    <p>C++ — це потужна мова програмування, яка широко використовується для розробки програмного забезпечення, ігор, операційних систем та інших високопродуктивних додатків. Вона поєднує в собі можливості низькорівневого програмування з високорівневими абстракціями. C++ був створений Б'ярном Страуструпом у 1980-х роках як розширення мови C.</p>
-    <p>Основні переваги C++ включають високу продуктивність, гнучкість та підтримку об'єктно-орієнтованого програмування. Ця мова є однією з найпопулярніших у світі програмування, і її вивчення є важливим кроком для кожного програміста.</p>
-    <p><a href="#top">Повернутися до змісту</a></p>
+    <section id="main">
+        <h2>Ласкаво просимо на сайт про любов</h2>
+        <p>Любов — це найсильніше почуття, яке об’єднує людей. Дізнайтеся більше про любов, її форми та прояв.</p>
+    </section>
 
-    <h2 id="basics">Основи C++</h2>
-    <p>Основи C++ включають розуміння таких понять, як змінні, типи даних, оператори, цикли та умовні оператори. Ось приклад простого коду на C++:</p>
-    <pre><code>
-#include &lt;iostream&gt;
-using namespace std;
+    <section id="quotes">
+        <h2>Цитати про любов</h2>
+        <blockquote>
+            <p>"Любов — це коли щастя іншої людини стає необхідним для вашого власного."</p>
+            <footer>— Роберт Хайнлайн</footer>
+        </blockquote>
+        <blockquote>
+            <p>"Любити — це означає бачити людину такою, якою її задумав Бог."</p>
+            <footer>— Федір Достоєвський</footer>
+        </blockquote>
+    </section>
 
-int main() {
-    cout &lt;&lt; "Hello, World!" &lt;&lt; endl;
-    return 0;
-}
-    </code></pre>
-    <p>У цьому прикладі ми використовуємо бібліотеку `<iostream>`, яка дозволяє працювати з введенням і виведенням даних. Функція `main()` є точкою входу в програму, і саме тут починається виконання коду.</p>
-    <p>Змінні в C++ оголошуються за допомогою типів даних, таких як `int`, `float`, `double`, `char` тощо. Наприклад:</p>
-    <pre><code>
-int number = 10;
-float pi = 3.14;
-char letter = 'A';
-    </code></pre>
-    <p>Цикли, такі як `for`, `while` і `do-while`, дозволяють повторювати певні дії. Умовні оператори, такі як `if`, `else` і `switch`, дозволяють керувати потоком виконання програми.</p>
-    <p><a href="#top">Повернутися до змісту</a></p>
+    <section id="stories">
+        <h2>Історії кохання</h2>
+        <article>
+            <h3>Історія перша</h3>
+            <p>Це історія про двох людей, які знайшли одне одного в найнесподіваніший момент...</p>
+        </article>
+        <article>
+            <h3>Історія друга</h3>
+            <p>Інша історія про те, як любов долає всі перешкоди...</p>
+        </article>
+    </section>
 
-    <h2 id="oop">Об'єктно-орієнтоване програмування</h2>
-    <p>C++ підтримує об'єктно-орієнтоване програмування (ООП), яке включає такі концепції, як класи, об'єкти, наслідування, поліморфізм та інкапсуляція. Ось приклад простого класу на C++:</p>
-    <pre><code>
-class MyClass {
-public:
-    MyClass() {
-        cout &lt;&lt; "Об'єкт створено" &lt;&lt; endl;
-    }
-    ~MyClass() {
-        cout &lt;&lt; "Об'єкт знищено" &lt;&lt; endl;
-    }
-};
-    </code></pre>
-    <p>У цьому прикладі ми створили клас `MyClass` з конструктором і деструктором. Конструктор викликається при створенні об'єкта, а деструктор — при його знищенні.</p>
-    <p>Наслідування дозволяє створювати нові класи на основі існуючих. Наприклад:</p>
-    <pre><code>
-class Animal {
-public:
-    void eat() {
-        cout &lt;&lt; "Я їм" &lt;&lt; endl;
-    }
-};
+    <section id="contact">
+        <h2>Зв’яжіться з нами</h2>
+        <form action="#" method="post">
+            <label for="name">Ім’я:</label>
+            <input type="text" id="name" name="name" required>
 
-class Dog : public Animal {
-public:
-    void bark() {
-        cout &lt;&lt; "Гав-гав!" &lt;&lt; endl;
-    }
-};
-    </code></pre>
-    <p>Тут клас `Dog` успадковує методи класу `Animal`.</p>
-    <p><a href="#top">Повернутися до змісту</a></p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-    <h2 id="stl">Стандартна бібліотека шаблонів (STL)</h2>
-    <p>Стандартна бібліотека шаблонів (STL) є однією з найпотужніших частин C++. Вона містить шаблони для роботи з контейнерами, алгоритмами та ітераторами. Ось приклад використання вектора:</p>
-    <pre><code>
-#include &lt;vector&gt;
-#include &lt;iostream&gt;
+            <label for="message">Повідомлення:</label>
+            <textarea id="message" name="message" required></textarea>
 
-int main() {
-    std::vector&lt;int&gt; numbers = {1, 2, 3, 4, 5};
-    for (int num : numbers) {
-        std::cout &lt;&lt; num &lt;&lt; " ";
-    }
-    return 0;
-}
-    </code></pre>
-    <p>У цьому прикладі ми використовуємо контейнер `vector`, який дозволяє зберігати набір елементів. STL також включає такі контейнери, як `list`, `map`, `set` тощо.</p>
-    <p><a href="#top">Повернутися до змісту</a></p>
-
-    <h2 id="resources">Додаткові ресурси</h2>
-    <p>Для більш глибокого вивчення C++ рекомендуємо наступні ресурси:</p>
-    <ul>
-        <li><a href="https://www.w3schools.com/cpp/" target="_blank">W3Schools C++ Tutorial</a></li>
-        <li><a href="https://www.learncpp.com/" target="_blank">Learn C++</a></li>
-        <li><a href="https://github.com/Kolya-f/" target="_blank">Git</a></li>
-    </ul>
-    <p><a href="#top">Повернутися до змісту</a></p>
-
-    <h2>Зображення</h2>
-    <p>Ось зображення, яке ілюструє роботу з C++:</p>
-    <img src="Screenshot from 2025-02-23 17-31-14.png" alt="Приклад роботи з C++">
+            <button type="submit">Надіслати</button>
+        </form>
+    </section>
 
     <footer>
-        <p>© 2025 Програмування на C++. Усі права захищені.</p>
+        <p>&copy; 2023 Сайт про любов. Усі права захищені.</p>
     </footer>
-
-    <script>
-        document.getElementById('style-switcher').addEventListener('click', function() {
-            var mainStyle = document.getElementById('main-style');
-            var additionalStyle = document.getElementById('additional-style');
-
-            if (mainStyle.disabled) {
-                mainStyle.disabled = false;
-                additionalStyle.disabled = true;
-            } else {
-                mainStyle.disabled = true;
-                additionalStyle.disabled = false;
-            }
-        });
-    </script>
 </body>
 </html>

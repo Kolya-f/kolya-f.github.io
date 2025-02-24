@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://kolya-f.github.io/sitemap.xml
+
