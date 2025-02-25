@@ -12,7 +12,7 @@ if (toggle) {
 }
 
 // Таймер
-const startDate = new Date('2023-01-01'); // Замініть на дату вашого знайомства
+const startDate = new Date('2025-01-11'); // Замініть на дату вашого знайомства
 const daysElement = document.getElementById('days');
 const hoursElement = document.getElementById('hours');
 const minutesElement = document.getElementById('minutes');
