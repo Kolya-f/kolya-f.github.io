@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мар’яна — Моя любов</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,16 +16,38 @@
                 <li><a href="#main">Головна</a></li>
                 <li><a href="#quotes">Цитати</a></li>
                 <li><a href="#stories">Наші моменти</a></li>
+                <li><a href="#gallery">Галерея</a></li>
             </ul>
         </nav>
+        <button id="theme-toggle"><i class="fas fa-moon"></i></button>
     </header>
+    
+    <div id="music-notification" style="display: none;">
+    <p>Натисніть "Увімкнути музику", щоб насолоджуватися мелодією.</p>
+</div>
 
-    <section id="main">
+    <section id="main" data-aos="fade-up">
         <h2>Ласкаво просимо на сайт про мою любов до Мар’яни</h2>
-        <p>Мар’яна — це найяскравіша зірка в моєму житті. Цей сайт — про неї, про нашу любов і про те, як вона робить моє життя кращим.</p>
+        <p>
+            Мар’яна — це не просто ім’я. Це почуття, яке наповнює моє серце теплом і радістю. Кожен момент, проведений з нею, — це маленьке диво, яке я бережу в своїй душі.
+        </p>
+        
+        <audio id="background-music" loop>
+    <source src="romantic_music.mp3" type="audio/mpeg">
+    Ваш браузер не підтримує аудіо.
+</audio>
+
+<!-- Кнопка для керування музикою -->
+<div id="music-controls">
+    <button id="play-music"><i class="fas fa-play"></i> Увімкнути музику</button>
+    <button id="pause-music" style="display: none;"><i class="fas fa-pause"></i> Вимкнути музику</button>
+</div>
+        <div id="timer">
+            <p>Ми разом вже: <span id="days">0</span> днів, <span id="hours">0</span> годин, <span id="minutes">0</span> хвилин!</p>
+        </div>
     </section>
 
-    <section id="quotes">
+    <section id="quotes" data-aos="fade-up">
         <h2>Цитати про Мар’яну</h2>
         <div class="quote-container">
             <blockquote>
@@ -42,25 +66,74 @@
                 <p>"Навіть тисячі слів не виражать, як сильно я тебе люблю."</p>
                 <footer>— Я</footer>
             </blockquote>
+            <blockquote>
+                <p>"Ти — моя муза, моя натхнення і моя сила. Якщо б не ти, я б не був би тим, ким я є."</p>
+                <footer>— Я</footer>
+            </blockquote>
+            <blockquote>
+                <p>"З тобою кожен день стає особливим. Ти робиш моє життя яскравішим і теплішим."</p>
+                <footer>— Я</footer>
+            </blockquote>
+            <!-- Додаткові цитати -->
+            <div id="more-quotes" style="display: none;">
+                <blockquote>
+                    <p>"Ти — моя зірка, яка світить у найтемніші ночі."</p>
+                    <footer>— Я</footer>
+                </blockquote>
+                <blockquote>
+                    <p>"Любов до тебе — це найкраще, що сталося в моєму житті."</p>
+                    <footer>— Я</footer>
+                </blockquote>
+                <blockquote>
+                    <p>"Ти — моя півкілька, яка робить мене цілим."</p>
+                    <footer>— Я</footer>
+                </blockquote>
+                <blockquote>
+                    <p>"Ти — моя мрія, яка стала реальністю."</p>
+                    <footer>— Я</footer>
+                </blockquote>
+                <blockquote>
+                    <p>"З тобою я відчуваю, що можу звернути гори."</p>
+                    <footer>— Я</footer>
+                </blockquote>
+            </div>
         </div>
+        <button id="load-more">Показати більше</button>
     </section>
 
-    <section id="stories">
+    <section id="stories" data-aos="fade-up">
         <h2>Наші моменти</h2>
         <article>
             <h3>Перша зустріч</h3>
-            <p>Це був найкращий день у моєму житті. Я побачив її, і моє серце забилося частіше...</p>
-        </article>
-        <article>
-            <h3>Спільні мрії</h3>
-            <p>Ми мріємо про подорожі, про будинок біля моря і про те, щоб завжди бути разом...</p>
+            <p>
+                Наша перша зустріч залишиться в моїй пам’яті назавжди. Це був звичайний день, але для мене він став початком чогось неймовірного. Ми зустрілися випадково, але я відразу зрозумів, що це не просто випадковість. Її очі сяяли, як зірки, а посмішка змусила моє серце битися частіше. Ми розмовляли годинами, і кожне її слово знаходило відгук у моїй душі. Тоді я зрозумів, що знайшов ту саму.
+            </p>
         </article>
     </section>
 
+    <section id="gallery" data-aos="fade-up">
+        <h2>Галерея</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="photo_2025-02-25_11-56-19.jpg" alt="Фото 1"></div>
+                <div class="swiper-slide"><img src="photo_2025-02-25_12-01-12.jpg" alt="Фото 2"></div>
+                <div class="swiper-slide"><img src="photo_2025-02-25_12-01-18.jpg" alt="Фото 3"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2023 Мар’яна — Моя любов. Усі права захищені.</p>
+        <p>&copy; 2025 Мар’яна — Моя любов. Усі права захищені.</p>
     </footer>
 
+    <audio autoplay loop>
+        <source src="lady-gaga-bruno-mars-die-with-a-smile.mp3" type="audio/mpeg">
+        Ваш браузер не підтримує аудіо.
+    </audio>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,12 +1,18 @@
 body {
-    font-family: 'Georgia', serif;
+    font-family: 'Playfair Display', serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb); /* Градієнтний фон */
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee, #fbc2eb, #ff9a9e);
     background-size: 400% 400%;
-    animation: gradientBG 10s ease infinite;
+    animation: gradientBG 15s ease infinite;
     color: #333;
+    transition: background 0.5s, color 0.5s;
+}
+
+[data-theme="dark"] {
+    background: linear-gradient(135deg, #333, #555, #777, #999, #777, #555);
+    color: #fff;
 }
 
 @keyframes gradientBG {
@@ -16,19 +22,19 @@ body {
 }
 
 header {
-    background: rgba(255, 105, 180, 0.8); /* Напівпрозорий рожевий */
+    background: rgba(255, 105, 180, 0.8);
     color: #fff;
     padding: 1rem 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px); /* Ефект розмиття */
+    backdrop-filter: blur(10px);
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5rem;
-    font-family: 'Georgia', serif;
-    animation: glow 2s infinite alternate; /* Світіння тексту */
+    font-family: 'Great Vibes', cursive;
+    animation: glow 2s infinite alternate;
 }
 
 @keyframes glow {
@@ -55,16 +61,21 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffd1dc; /* Світло-рожевий при наведенні */
+    color: #ffd1dc;
 }
 
 section {
     padding: 2rem;
     margin: 1rem 0;
-    background: rgba(255, 255, 255, 0.9); /* Напівпрозорий білий фон для секцій */
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px); /* Ефект розмиття */
+    backdrop-filter: blur(10px);
+}
+
+[data-theme="dark"] section {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
 }
 
 blockquote {
@@ -73,21 +84,75 @@ blockquote {
     padding-left: 1rem;
     margin: 1rem 0;
     color: #555;
-    background: rgba(255, 240, 245, 0.8); /* Напівпрозорий ніжно-рожевий фон для цитат */
+    background: rgba(255, 240, 245, 0.8);
     padding: 1rem;
     border-radius: 5px;
     transition: transform 0.3s ease;
 }
 
 blockquote:hover {
-    transform: scale(1.05); /* Ефект збільшення при наведенні */
+    transform: scale(1.05);
+}
+
+#music-controls {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10000;
+}
+
+#music-controls button {
+    background: rgba(255, 105, 180, 0.8);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+#music-controls button:hover {
+    background: rgba(255, 105, 180, 1);
+}
+
+/* Стилі для падаючих сердечок */
+.heart {
+    position: fixed;
+    top: -10%;
+    color: #ff69b4; /* Колір сердечка */
+    font-size: 20px;
+    animation: fall linear infinite;
+    z-index: 9999; /* Щоб сердечка були поверх інших елементів */
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh); /* Рух сердечка зверху вниз */
+    }
+}
+
+/* Галерея */
+.swiper-slide img {
+    width: 80%; /* Зменшуємо ширину фотографій */
+    height: auto; /* Автоматична висота для збереження пропорцій */
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 auto; /* Центруємо фотографії */
+    display: block;
+    cursor: pointer; /* Додаємо курсор, щоб показати, що фотографію можна збільшити */
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide img:hover {
+    transform: scale(1.05); /* Збільшуємо фотографію при наведенні */
 }
 
 footer {
-    background: rgba(51, 51, 51, 0.8); /* Напівпрозорий темний фон */
+    background: rgba(51, 51, 51, 0.8);
     color: #fff;
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
-    backdrop-filter: blur(10px); /* Ефект розмиття */
+    backdrop-filter: blur(10px);
 }
